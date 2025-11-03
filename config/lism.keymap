@@ -20,7 +20,7 @@
             compatible = "zmk,behavior-macro";
             label = "EMOJI";
             #binding-cells = <0>;
-            // DTS構文エラーを修正: < > で囲み、内部はスペース区切り
+            // 修正済み: < > で囲み、内部はスペース区切り
             bindings = <
                 &macro_press &kp CAPSLOCK
                 &macro_tap &kp E
@@ -33,7 +33,7 @@
             compatible = "zmk,behavior-macro";
             label = "DBL_0"; 
             #binding-cells = <0>;
-            // DTS構文エラーを修正: < > で囲み、内部はスペース区切り
+            // 修正済み: < > で囲み、内部はスペース区切り
             bindings = <
                 &macro_press &kp KP_NUM_0
                 &macro_release &kp KP_NUM_0
@@ -100,7 +100,7 @@
        // L3: Windows マウス / ナビゲーションレイヤー (Keyball L2のマウス機能を移植)
         layer_3 {
             display-name = "Win Mouse/Nav Layer";
-            // L3の4の左隣 (左手2行目先頭) に「00」マクロを配置
+            // 「4」の左隣に「00」マクロを配置
             bindings = <
 &kp DEL          &kp KP_NUM_7  &kp KP_NUM_8  &kp KP_NUM_9  &kp KP_PLUS                        &kp PAGE_UP    &mkp MB1   &kp UP     &mkp MB2   &mkp MB3
 &macro double_zero &kp KP_NUM_4  &kp KP_NUM_5  &kp KP_NUM_6  &kp KP_MINUS                       &kp PAGE_DOWN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp PRINTSCREEN
