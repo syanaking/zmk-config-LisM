@@ -16,7 +16,7 @@ parse_config:
     '&mmv MOVE_DOWN': Move↓
     '&mmv MOVE_LEFT': Move←
     '&mmv MOVE_RIGHT': Move→
-    '&macro double_zero': 00
+    '&double_zero': 00
     '&emoji': EMOJI
 
   zmk_keycode_map:
@@ -29,7 +29,7 @@ parse_config:
     DOT: "."
     SLASH: "/"
     DELETE: "DEL"
-    PRINT_SCREEN: "PRINT SCREEN"
+    PRINTSCREEN: "PRINTSCREEN"
     BACKSPACE: "BS"
     SINGLE_QUOTE: "'"
     DOUBLE_QUOTES: "\""
@@ -59,6 +59,8 @@ parse_config:
     RIGHT: "→"
     UP: "↑"
     DOWN: "↓"
+    LANG_ZENKAKUHANKAKU: "半/全"
+    KP_COMMA: "KP COMMA"
 
 
 draw_config:

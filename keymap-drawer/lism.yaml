@@ -33,14 +33,14 @@ layers:
   - /
   - LCTRL
   - {t: Global Settings, h: momentary}
-  - {t: ESC, h: Default Layer}
+  - {t: LANG_ZENKAKUHANKAKU, h: Default Layer}
   - Sft+Gui+4
   - {t: SPACE, h: Win Fn/Num Layer}
   - {t: TAB, h: Win Mouse/Nav Layer}
   - {t: RSHIFT, h: Win Mouse/Nav Layer}
   - {t: BS, h: Win Fn/Num Layer}
   - Sft+Gui+4
-  - '@'
+  - LANG_ZENKAKUHANKAKU
   - {t: Global Settings, h: momentary}
   - ENTER
   Win Base Layer:
@@ -109,7 +109,7 @@ layers:
   - F1
   - ';'
   - :
-  - LEFT GUI
+  - ESC
   - '|'
   - '['
   - ']'
@@ -137,7 +137,7 @@ layers:
   - UP
   - '&mkp MB2'
   - '&mkp MB3'
-  - '&macro double_zero'
+  - '&double_zero'
   - KP 4
   - KP 5
   - KP 6
@@ -146,19 +146,19 @@ layers:
   - LEFT
   - DOWN
   - RIGHT
-  - PRINT SCREEN
+  - PRINTSCREEN
   - KP 0
   - KP 1
   - KP 2
   - KP 3
   - KP MULTIPLY
-  - KP DOT
+  - KP COMMA
   - Ctl+C
   - Ctl+V
   - '&mkp MB4'
   - '&mkp MB5'
   - KP ENTER
-  - KP DOT
+  - KP COMMA
   - {t: Win Base Layer, h: momentary}
   - {t: ▽, type: trans}
   - KP DIVIDE
