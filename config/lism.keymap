@@ -48,87 +48,138 @@
     keymap {
         compatible = "zmk,keymap";
 
+// L0: Windows/iPad 共通のベースレイヤー (L7へのアクセスキーを変更)
         default_layer {
             display-name = "Default Layer";
             bindings = <
-                &kp Q            &kp W              &kp E                 &kp R                   &kp T                                                  &kp Y        &kp U            &kp I              &kp O               &kp P
-                &kp A            &mt LALT S         &mt LSHIFT D          &mt LGUI F              &mt LCTRL G                                            &mt RCTRL H  &mt RGUI J       &mt RSHIFT K       &mt RALT L          &lt 3 SEMICOLON
-                &kp Z            &kp X              &kp C                 &kp V                   &kp B                                                  &kp N        &kp M            &kp COMMA          &kp DOT             &kp SLASH
-                &lt 4 DELETE     &tog 1             &lt 1 TAB             &kp LS(LG(N4))          &lt 2 SPACE       &lt 3 ESC           &lt 3 BACKSPACE  &lt 2 ENTER  &kp LS(LG(N4))   &kp F7             &kp F10             &lt 4 F12 
+                &kp Q            &kp W              &kp E                 &kp R                   &kp T               
+                                             &kp Y        &kp U            &kp I              &kp O               &kp P
+           
+                &kp A            &mt LALT S         &mt LSHIFT D          &mt LGUI F              &mt LCTRL G                                         
+                &mt RCTRL H  &mt RGUI J       &mt RSHIFT K       &mt RALT L          &lt 3 SEMICOLON
+                &kp Z            &kp X              &kp C                
+                &kp V                   &kp B                                                  &kp N        &kp M            &kp COMMA     
+                &kp DOT             &kp SLASH
+                // 既存のレイヤー切り替え（L1/L2/L3）をL0からL2/L3へのモーメンタリに再利用
+                &tog 1             &mo 7             &lt 1 ESC             &kp LS(LG(N4))          &lt 2 SPACE       &lt 3 TAB      
+                &lt 3 SHIFT  &lt 2 BACKSPACE  &kp LS(LG(N4))   &mo 7 // ここをL7 (Global Settings) に変更             &kp @             &kp ENTER
             >;
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
         };
 
+// L1: Windows ベースレイヤー
         layer_1 {
-            display-name = "Mouse Layer";
+            display-name = "Win Base Layer";
             bindings = <
-                &trans           &trans             &trans                &trans                  &trans                                                 &kp SPACE    &kp RG(LEFT)     &kp RG(RIGHT)      &mkp MB3            &trans
-                &mkp MB5         &trans             &trans                &trans                  &trans                                                 &kp LG(UP)   &mkp MB1         &mkp MB2           &msc SCRL_UP        &msc SCRL_DOWN
-                &mkp MB4         &trans             &trans                &trans                  &trans                                                 &kp LG(DOWN) &kp LEFT         &kp UP             &kp RIGHT           &trans
-                &trans           &trans             &trans                &trans                  &trans            &trans              &trans           &trans       &trans           &kp DOWN           &trans              &kp LG(W)
+                &trans           &trans             &trans                &trans                  &trans                        
+                                 &trans           &trans             &trans              &trans              &trans
+                &trans           &trans             &trans                  &trans                  &trans                                                 
+                &trans       &trans           &trans             &trans              &trans
+                &trans           &trans             &trans                
+                &trans                   &trans                                                  &trans       &trans           &trans     
+                &trans             &trans
+                // L2/L3へのアクセスを再定義
+                &trans           &trans             &mo 2               &trans          &lt 2 SPACE             &lt 3 TAB
+                &lt 3 SHIFT          &lt 2 BACKSPACE             &trans           &trans             &trans              &trans 
             >;
         };
 
+// L2: Windows Fn / 数字 / 記号レイヤー (Keyball L1/L2の機能を統合)
         layer_2 {
-            display-name = "Number Layer";
+            display-name = "Win Fn/Num Layer";
             bindings = <
-                &trans           &kp NUMBER_7       &kp NUMBER_8          &kp NUMBER_9            &kp EQUAL                                              &kp F1       &kp F2           &kp F7             &kp F10             &kp RSHIFT
-                &kp ASTERISK     &mt LALT NUMBER_4  &mt LSHIFT NUMBER_5   &mt LGUI NUMBER_6       &mt LCTRL MINUS                                        &mkp MB1     &kp LEFT         &kp UP             &kp RIGHT           &kp RGUI
-                &kp SLASH        &kp NUMBER_1       &kp NUMBER_2          &kp NUMBER_3            &kp PLUS                                               &mkp MB2     &none            &kp DOWN           &none               &kp RALT
-                &trans           &kp DOT            &kp NUMBER_0          &trans                  &kp LANG2         &trans              &trans           &kp LANG1    &trans           &kp RS(RC(TAB))    &kp RC(TAB)         &kp F12 
+                &kp F2           &kp F3             &kp F4                &kp F5                  &kp F6                                      
+                                 &kp F7           &kp F8             &kp F9             &kp F10             &kp F11
+                &kp N7           &kp N8             &kp N9                  &kp MINUS               &kp EQUAL                                         
+                &kp N4       &kp N5           &kp N6             &kp PLUS           &kp SLASH
+                &kp N1           &kp N2             &kp N3                
+                &kp DOT                  &kp N0                                                  &kp LBRC       &kp RBRC         &kp SQT     
+                &kp DQT             &kp BSLH
+                &trans           &trans             &trans                  &trans                  &trans             &trans
+                &trans           &trans             &trans           &trans             &trans              &kp F12 
             >;
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
         };
 
+// L3: Windows マウス / ナビゲーションレイヤー (Keyball L2のマウス機能を移植)
         layer_3 {
-            display-name = "Mark Layer";
+            display-name = "Win Mouse/Nav Layer";
             bindings = <
-                &kp LS(LG(N4))   &kp F4             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &none                                                  &kp TILDE    &kp EXCLAMATION  &kp AT_SIGN        &kp HASH            &kp DOLLAR
-                &emoji           &kp F5             &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &none                                                  &kp GRAVE    &kp UNDER        &kp SINGLE_QUOTE   &kp DOUBLE_QUOTES   &kp BACKSLASH
-                &kp KP_NUMLOCK   &kp F11            &kp LEFT_BRACE        &kp RIGHT_BRACE         &none                                                  &kp PIPE     &kp PERCENT      &kp CARET          &kp AMPERSAND       &kp ASTERISK
-                &trans           &trans             &kp NUMBER_0          &trans                  &kp SPACE         &trans              &trans           &kp ENTER    &trans           &none              &none               &kp F12 
+                &trans           &kp HOME           &kp PG_UP             &kp END                 &trans                                      
+                                 &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp CARET          &kp PERCENT         &trans
+                &trans           &msc SCRL_UP       &trans                  &trans                  &trans                                                 
+                &mmv MOVE_UP   &mkp LCLK        &mkp RCLK          &mkp MB3
+                &trans           &msc SCRL_DOWN     &trans                
+                &trans                   &trans                                                  &mmv MOVE_LEFT &mmv MOVE_DOWN   &mmv MOVE_RIGHT    &mkp MB4
+                &kp PRINTSCREEN  &trans
+                &trans           &trans             &trans                  &trans                  &trans             &trans
+                &trans          &trans             &trans           &trans             &trans              &mkp MB5 
             >;
         };
 
+// L4: iPad ベースレイヤー
         layer_4 {
-            display-name = "Device Layer";
+            display-name = "iPad Base Layer";
             bindings = <
-                &none            &none              &none                 &none                   &bt BT_CLR                                             &bt BT_SEL 0 &bt BT_SEL 1     &bt BT_SEL 2       &bt BT_SEL 3        &bt BT_SEL 4
-                &none            &none              &none                 &none                   &none                                                  &none        &none            &none              &none               &none
-                &sys_reset       &none              &none                 &none                   &none                                                  &none        &none            &none              &none               &sys_reset
-                &bootloader      &bt BT_CLR_ALL     &none                 &none                   &none             &none               &none            &none        &none            &none              &none               &bootloader
+                &trans           &trans             &trans                &trans                  &trans                        
+                                 &trans           &trans             &trans              &trans              &trans
+                &trans           &trans             &trans                  &trans                  &trans                                                 
+                &trans       &trans           &trans             &trans              &trans
+                &trans           &trans             &trans                
+                &trans                   &trans                                                  &trans       &trans           &trans     
+                &trans             &trans
+                // L5/L6へのアクセスをここに定義
+                &mo 6           &mo 5             &mo 5               &trans          &mo 6             &trans
+                &trans          &trans             &trans           &trans             &trans              &trans 
             >;
         };
 
+        // L5: iPad Fn / 数字 / 記号レイヤー (L2をベースに、LCMDなどを活用)
         layer_5 {
-            display-name = "Brank Layer";
+            display-name = "iPad Fn/Num Layer";
             bindings = <
-                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
-                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
-                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
-                &trans           &trans             &trans                &trans                  &trans            &trans              &trans           &trans       &trans           &trans             &trans              &trans
+                &kp F2           &kp F3             &kp F4                &kp F5                  &kp F6                                      
+                                 &kp F7           &kp F8             &kp F9             &kp F10             &kp F11
+                &kp N7           &kp N8             &kp N9                  &kp MINUS               &kp EQUAL                                         
+                &kp N4       &kp N5           &kp N6             &kp PLUS           &kp SLASH
+                &kp N1           &kp N2             &kp N3                
+                &kp DOT                  &kp N0                                                  &kp LBRC       &kp RBRC         &kp SQT     
+                &kp DQT             &kp BSLH
+                &trans           &trans             &trans                  &trans                  &trans             &trans
+                &trans           &trans             &trans           &trans             &trans              &kp F12 
             >;
         };
 
+        // L6: iPad マウス / ナビゲーションレイヤー (L3をベースに、iPad特有のキーを追加)
         layer_6 {
-            display-name = "Brank Layer";
+            display-name = "iPad Mouse/Nav Layer";
             bindings = <
-                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
-                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
-                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
-                &trans           &trans             &trans                &trans                  &trans            &trans              &trans           &trans       &trans           &trans             &trans              &trans
+                &trans           &kp C_HOME         &kp PG_UP             &kp END                 &trans                                      
+                                 &trans           &trans             &trans              &trans              &trans
+                &trans           &msc SCRL_UP       &trans                  &trans                  &trans                                                 
+                &mmv MOVE_UP   &mkp LCLK        &mkp RCLK          &mkp MB3
+                &trans           &msc SCRL_DOWN     &trans                
+                &trans                   &trans                                                  &mmv MOVE_LEFT &mmv MOVE_DOWN   &mmv MOVE_RIGHT    &mkp MB4
+                &kp C_HOME       &trans             &trans                  &trans                  &trans             &trans
+                &trans           &trans             &trans           &trans             &trans              &mkp MB5 
             >;
         };
-
-        layer_7 {
-            display-name = "Brank Layer";
+ 
+ // L7: 全体設定/OS・BT切り替え (旧 L4の機能を移動・統合)
+        layer_7  
+            display-name = "Global Settings";
             bindings = <
-                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
-                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
-                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
-                &trans           &trans             &trans                &trans                  &trans            &trans              &trans           &trans       &trans           &trans             &trans              &trans
+                &bt BT_SEL 0             &bt BT_SEL 1             &bt BT_SEL 2                &bt BT_SEL 3                  &bt BT_SEL 4                   
+                                 &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2       &bt BT_SEL 3        &bt BT_SEL 4
+                &to 1            &to 4              &none                 &none                   &none                                                  
+                &none        &none            &none              &none              &none
+                &sys_reset       &bootloader        &trans                
+                &trans                   &trans                                                  &trans       &trans           &trans              &to 4         
+                &to 1
+                &trans   &bt BT_CLR              &none                 &none                   &none             &bt BT_CLR_ALL               &bt BT_CLR_ALL           
+                &none        &none            &none              &bt BT_CLR               &trans
             >;
         };
     };
 
-};
+}; // keymap ノード終了
