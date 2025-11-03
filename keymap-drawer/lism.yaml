@@ -169,8 +169,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Move↑
-  - Move↓
+  - Scroll↑
+  - Scroll↓
   - {t: ▽, type: trans}
   iPad Base Layer:
   - {t: ▽, type: trans}
