@@ -20,22 +20,25 @@
             compatible = "zmk,behavior-macro";
             label = "EMOJI";
             #binding-cells = <0>;
-            bindings = 
-                <&macro_press &kp CAPSLOCK>,
-                <&macro_tap &kp E>,
-                <&macro_release &kp CAPSLOCK>;
+            // 💡 正しいDTS構文: < で始まり、> で終わり、内部にカンマなし
+            bindings = <
+                &macro_press &kp CAPSLOCK
+                &macro_tap &kp E
+                &macro_release &kp CAPSLOCK
+            >;
         };
-
-        // 「00」を入力するマクロ
+        
+        // 注: double_zero マクロも同様に修正が必要です。
         double_zero: double_zero_macro {
             compatible = "zmk,behavior-macro";
             label = "DBL_0"; 
             #binding-cells = <0>;
-            bindings = 
-                <&macro_press &kp KP_NUM_0>,
-                <&macro_release &kp KP_NUM_0>,
-                <&macro_press &kp KP_NUM_0>,
-                <&macro_release &kp KP_NUM_0>;
+            bindings = <
+                &macro_press &kp KP_NUM_0
+                &macro_release &kp KP_NUM_0
+                &macro_press &kp KP_NUM_0
+                &macro_release &kp KP_NUM_0
+            >;
         };
     };
 
