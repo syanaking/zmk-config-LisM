@@ -109,7 +109,7 @@ layers:
   - F1
   - ';'
   - :
-  - LEFT WIN
+  - LEFT GUI
   - '|'
   - '['
   - ']'
@@ -132,7 +132,7 @@ layers:
   - KP 8
   - KP 9
   - KP PLUS
-  - PAGE UP
+  - PG UP
   - '&mkp MB1'
   - UP
   - '&mkp MB2'
@@ -142,11 +142,11 @@ layers:
   - KP 5
   - KP 6
   - KP MINUS
-  - PAGE DOWN
+  - PG DN
   - LEFT
   - DOWN
   - RIGHT
-  - PRINTSCREEN
+  - PRINT SCREEN
   - KP 0
   - KP 1
   - KP 2
@@ -263,7 +263,7 @@ layers:
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
   - '&mkp MB4'
-  - C_HOME
+  - Ctl+HOME
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

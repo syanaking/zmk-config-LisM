@@ -29,6 +29,7 @@ parse_config:
     DOT: "."
     SLASH: "/"
     DELETE: "DEL"
+    PRINT_SCREEN: "PRINT SCREEN"
     BACKSPACE: "BS"
     SINGLE_QUOTE: "'"
     DOUBLE_QUOTES: "\""
