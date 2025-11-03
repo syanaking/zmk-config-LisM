@@ -33,14 +33,14 @@ layers:
   - /
   - LCTRL
   - Global Settings
-  - {t: LANG5, h: Win Base Layer}
+  - {t: Alt+`, h: Win Base Layer}
   - Sft+Gui+4
   - {t: SPACE, h: Win Fn/Num Layer}
   - {t: TAB, h: Win Mouse/Nav Layer}
   - {t: RSHIFT, h: Win Mouse/Nav Layer}
   - {t: BS, h: Win Fn/Num Layer}
   - Sft+Gui+4
-  - {t: LANGUAGE 5, h: Win Base Layer}
+  - {t: Alt+`, h: Win Base Layer}
   - Global Settings
   - ENTER
   Win Base Layer:
@@ -76,14 +76,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ESC
-  - {t: LANG5, h: Default Layer, type: held}
+  - {t: Alt+`, h: Default Layer, type: held}
   - {t: ▽, type: trans}
   - {t: SPACE, h: Win Fn/Num Layer}
   - {t: TAB, h: Win Mouse/Nav Layer}
   - {t: RSHIFT, h: Win Mouse/Nav Layer}
   - {t: BS, h: Win Fn/Num Layer}
+  - {t: Alt+`, h: Default Layer}
   - {t: ▽, type: trans}
-  - {t: LANGUAGE 5, h: Default Layer}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Win Fn/Num Layer:
