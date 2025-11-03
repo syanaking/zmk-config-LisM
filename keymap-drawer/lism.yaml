@@ -20,7 +20,7 @@ layers:
   - {t: J, h: RGUI}
   - {t: K, h: RSHIFT}
   - {t: L, h: RALT}
-  - {t: ;, h: Mark Layer}
+  - {t: ;, h: Win Mouse/Nav Layer}
   - Z
   - X
   - C
@@ -31,230 +31,288 @@ layers:
   - ','
   - .
   - /
-  - {t: DEL, h: Device Layer}
-  - {t: Mouse Layer, h: toggle}
-  - {t: TAB, h: Mouse Layer}
+  - LCTRL
+  - {t: Global Settings, h: momentary}
+  - {t: ESC, h: Default Layer}
   - Sft+Gui+4
-  - {t: SPACE, h: Number Layer}
-  - {t: ESC, h: Mark Layer}
-  - {t: BS, h: Mark Layer}
-  - {t: ENTER, h: Number Layer}
+  - {t: SPACE, h: Win Fn/Num Layer}
+  - {t: TAB, h: Win Mouse/Nav Layer}
+  - {t: RSHIFT, h: Win Mouse/Nav Layer}
+  - {t: BS, h: Win Fn/Num Layer}
   - Sft+Gui+4
+  - '@'
+  - {t: Global Settings, h: momentary}
+  - ENTER
+  Win Base Layer:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ;, h: Win Mouse/Nav Layer}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: Win Mouse/Nav Layer, h: momentary}
+  - {t: ▽, type: trans}
+  - {t: SPACE, h: Win Fn/Num Layer}
+  - {t: TAB, h: Win Mouse/Nav Layer}
+  - {t: RSHIFT, h: Win Mouse/Nav Layer}
+  - {t: BS, h: Win Fn/Num Layer}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Win Fn/Num Layer:
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
   - F7
+  - F8
+  - F9
   - F10
-  - {t: F12, h: Device Layer}
-  Mouse Layer:
+  - F11
+  - '!'
+  - '"'
+  - '#'
+  - '$'
+  - '%'
+  - '&'
+  - '''
+  - '('
+  - ')'
+  - '~'
+  - F1
+  - ';'
+  - :
+  - LEFT WIN
+  - '|'
+  - '['
+  - ']'
+  - '\\'
+  - '@'
+  - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - SPACE
-  - Gui+←
-  - Gui+→
-  - '&mkp MB3'
-  - {t: ▽, type: trans}
-  - '&mkp MB5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+↑
+  - {t: ▽, type: trans}
+  Win Mouse/Nav Layer:
+  - DEL
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP PLUS
+  - PAGE UP
   - '&mkp MB1'
+  - UP
   - '&mkp MB2'
-  - '&msc SCRL_UP'
-  - '&msc SCRL_DOWN'
+  - '&mkp MB3'
+  - '&macro double_zero'
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP MINUS
+  - PAGE DOWN
+  - LEFT
+  - DOWN
+  - RIGHT
+  - PRINTSCREEN
+  - KP 0
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP MULTIPLY
+  - KP DOT
+  - Ctl+C
+  - Ctl+V
   - '&mkp MB4'
+  - '&mkp MB5'
+  - KP ENTER
+  - KP DOT
+  - {t: Win Base Layer, h: momentary}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Gui+↓
-  - ←
-  - ↑
-  - →
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
+  - KP DIVIDE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  iPad Base Layer:
   - {t: ▽, type: trans}
-  - ↓
   - {t: ▽, type: trans}
-  - Gui+W
-  Number Layer:
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: iPad Mouse/Nav Layer, h: momentary}
+  - {t: iPad Fn/Num Layer, h: momentary}
+  - {t: iPad Fn/Num Layer, h: momentary}
+  - {t: ▽, type: trans}
+  - {t: iPad Mouse/Nav Layer, h: momentary}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  iPad Fn/Num Layer:
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
   - '7'
   - '8'
   - '9'
+  - '-'
   - '='
-  - F1
-  - F2
-  - F7
-  - F10
-  - RSHIFT
-  - '*'
-  - {t: '4', h: LALT}
-  - {t: '5', h: LSHIFT}
-  - {t: '6', h: LGUI}
-  - {t: '-', h: LCTRL}
-  - '&mkp MB1'
-  - ←
-  - ↑
-  - →
-  - RGUI
-  - /
+  - '4'
+  - '5'
+  - '6'
+  - '+'
+  - '/'
   - '1'
   - '2'
   - '3'
-  - +
-  - '&mkp MB2'
-  - ''
-  - ↓
-  - ''
-  - RALT
-  - {t: ▽, type: trans}
-  - .
+  - '.'
   - '0'
-  - {t: ▽, type: trans}
-  - {t: LANG2, type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LANG1
-  - {t: ▽, type: trans}
-  - Sft+Ctl+TAB
-  - Ctl+TAB
-  - F12
-  Mark Layer:
-  - Sft+Gui+4
-  - F4
-  - (
-  - )
-  - ''
-  - '~'
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '&emoji'
-  - F5
   - '['
   - ']'
-  - ''
-  - '`'
-  - _
-  - ''''
+  - '''
   - '"'
-  - {t: \, type: held}
-  - KP NUMLOCK
-  - F11
-  - '{'
-  - '}'
-  - ''
-  - '|'
-  - '%'
-  - ^
-  - '&'
-  - '*'
+  - '\\'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '0'
-  - {t: ▽, type: trans}
-  - SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ENTER
   - {t: ▽, type: trans}
-  - ''
-  - ''
   - F12
-  Device Layer:
-  - ''
-  - ''
-  - ''
-  - ''
-  - BT CLR
+  iPad Mouse/Nav Layer:
+  - {t: ▽, type: trans}
+  - HOME
+  - PG UP
+  - END
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&msc SCRL_UP'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_UP'
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - '&mkp MB3'
+  - {t: ▽, type: trans}
+  - '&msc SCRL_DOWN'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - '&mkp MB4'
+  - C_HOME
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB5'
+  - {t: ▽, type: trans}
+  Global Settings:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: Win Base Layer, h: to}
+  - {t: iPad Base Layer, h: to}
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
+  - {t: iPad Base Layer, h: to}
+  - {t: Win Base Layer, h: to}
+  - '&sys_reset'
+  - '&bootloader'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&bootloader'
+  - '&sys_reset'
+  - {t: ▽, type: trans}
+  - BT CLR
   - ''
   - ''
   - ''
-  - ''
-  - Reset
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Reset
-  - {t: Boot, type: held}
+  - BT CLR ALL
   - BT CLR ALL
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Boot
-  Brank Layer:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT CLR

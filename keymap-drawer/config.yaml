@@ -3,6 +3,21 @@ parse_config:
     '&sys_reset': Reset
     '&bootloader': Boot
     '&caps_word': Caps Word
+    '&mkp MB1': M1
+    '&mkp MB2': M2
+    '&mkp MB3': M3
+    '&mkp MB4': M4
+    '&mkp MB5': M5
+    '&mkp LCLK': LCLK
+    '&mkp RCLK': RCLK
+    '&msc SCRL_UP': Scroll↑
+    '&msc SCRL_DOWN': Scroll↓
+    '&mmv MOVE_UP': Move↑
+    '&mmv MOVE_DOWN': Move↓
+    '&mmv MOVE_LEFT': Move←
+    '&mmv MOVE_RIGHT': Move→
+    '&macro double_zero': 00
+    '&emoji': EMOJI
 
   zmk_keycode_map:
     # Symbols
