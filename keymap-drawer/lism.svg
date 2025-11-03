@@ -281,7 +281,7 @@ path.combo { stroke: #7f7f7f; }
 </a></g>
 <g transform="translate(140, 196)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">半/全</text>
+<text x="0" y="0" class="key tap">LANG5</text>
 <a href="#Win-Base-Layer">
 <text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 64%">Win Base L…</tspan></text>
 </a></g>
@@ -323,7 +323,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(588, 196)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">半/全</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.9em" style="font-size: 88%">LANGUAGE</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">5</tspan>
+</text>
 <a href="#Win-Base-Layer">
 <text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 64%">Win Base L…</tspan></text>
 </a></g>
@@ -475,7 +477,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(140, 196)" class="key held keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
-<text x="0" y="0" class="key held tap">半/全</text>
+<text x="0" y="0" class="key held tap">LANG5</text>
 <a href="#Default-Layer">
 <text x="0" y="24" class="key held hold layer-activator"><tspan style="font-size: 64%">Default La…</tspan></text>
 </a></g>
@@ -511,10 +513,14 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(588, 196)" class="key trans keypos-39">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
-</g>
+<g transform="translate(588, 196)" class="key keypos-39">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.9em" style="font-size: 88%">LANGUAGE</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">5</tspan>
+</text>
+<a href="#Default-Layer">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 64%">Default La…</tspan></text>
+</a></g>
 <g transform="translate(644, 196)" class="key trans keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
