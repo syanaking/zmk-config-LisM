@@ -32,19 +32,18 @@ layers:
   - .
   - /
   - LCTRL
-  - {t: Global Settings, h: momentary}
-  - {t: Ctl+SPACE, h: Default Layer}
+  - Global Settings
+  - {t: Ctl+SPACE, h: Win Base Layer}
   - Sft+Gui+4
   - {t: SPACE, h: Win Fn/Num Layer}
   - {t: TAB, h: Win Mouse/Nav Layer}
   - {t: RSHIFT, h: Win Mouse/Nav Layer}
   - {t: BS, h: Win Fn/Num Layer}
   - Sft+Gui+4
-  - Ctl+SPACE
-  - {t: Global Settings, h: momentary}
+  - {t: Ctl+SPACE, h: Win Base Layer}
+  - Global Settings
   - ENTER
   Win Base Layer:
-  - '&emoji'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -63,7 +62,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ;, h: Win Mouse/Nav Layer}
+  - {t: ▽, type: trans}
+  - {t: SEMI, h: Win Mouse/Nav Layer}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -75,15 +75,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: Win Mouse/Nav Layer, h: momentary}
+  - ESC
+  - {t: Ctl+SPACE, h: Default Layer, type: held}
   - {t: ▽, type: trans}
   - {t: SPACE, h: Win Fn/Num Layer}
   - {t: TAB, h: Win Mouse/Nav Layer}
   - {t: RSHIFT, h: Win Mouse/Nav Layer}
   - {t: BS, h: Win Fn/Num Layer}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: Ctl+SPACE, h: Default Layer}
+  - EMOJI
   - {t: ▽, type: trans}
   Win Fn/Num Layer:
   - F2
@@ -99,26 +100,28 @@ layers:
   - '!'
   - '"'
   - '#'
-  - '$'
+  - $
   - '%'
   - '&'
-  - '''
-  - '('
-  - ')'
+  - ''''
+  - (
+  - )
   - '~'
   - F1
-  - ';'
-  - :
+  - SEMI
+  - ':'
   - ESC
   - '|'
   - '['
-  - ']'
-  - '\\'
+  - RBRC
+  - BSLH
   - '@'
   - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -133,20 +136,20 @@ layers:
   - '9'
   - KP PLUS
   - PG UP
-  - '&mkp MB1'
-  - UP
-  - '&mkp MB2'
-  - '&mkp MB3'
-  - '&double_zero'
+  - M1
+  - ↑
+  - M2
+  - M3
+  - '00'
   - '4'
   - '5'
   - '6'
   - KP MINUS
   - PG DN
-  - LEFT
-  - DOWN
-  - RIGHT
-  - PRINTSCREEN
+  - ←
+  - ↓
+  - →
+  - {t: PRINTSCREEN, type: held}
   - '0'
   - '1'
   - '2'
@@ -155,17 +158,19 @@ layers:
   - KP COMMA
   - Ctl+C
   - Ctl+V
-  - '&mkp MB4'
-  - '&mkp MB5'
+  - M4
+  - M5
   - KP ENTER
+  - KP DOT
   - KP COMMA
-  - {t: Win Base Layer, h: momentary}
   - {t: ▽, type: trans}
   - KP DIVIDE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Scroll↑
+  - Scroll↓
   - {t: ▽, type: trans}
   iPad Base Layer:
   - {t: ▽, type: trans}
@@ -188,11 +193,23 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: iPad Mouse/Nav Layer, h: momentary}
-  - {t: iPad Fn/Num Layer, h: momentary}
-  - {t: iPad Fn/Num Layer, h: momentary}
   - {t: ▽, type: trans}
-  - {t: iPad Mouse/Nav Layer, h: momentary}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - iPad Mouse/Nav Layer
+  - iPad Fn/Num Layer
+  - iPad Fn/Num Layer
+  - {t: ▽, type: trans}
+  - iPad Mouse/Nav Layer
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -217,18 +234,24 @@ layers:
   - '4'
   - '5'
   - '6'
-  - '+'
-  - '/'
+  - +
+  - /
   - '1'
   - '2'
   - '3'
-  - '.'
+  - .
   - '0'
-  - '['
-  - ']'
-  - '''
-  - '"'
-  - '\\'
+  - LBRC
+  - RBRC
+  - SQT
+  - DQT
+  - BSLH
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -247,24 +270,26 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&msc SCRL_UP'
+  - Scroll↑
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mmv MOVE_UP'
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  - '&mkp MB3'
+  - Move↑
+  - LCLK
+  - RCLK
+  - M3
   - {t: ▽, type: trans}
-  - '&msc SCRL_DOWN'
+  - Scroll↓
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
-  - '&mkp MB4'
+  - {t: ▽, type: trans}
+  - Move←
+  - Move↓
+  - Move→
+  - M4
   - Ctl+HOME
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -272,7 +297,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - M5
   - {t: ▽, type: trans}
   Global Settings:
   - {t: BT, h: '0'}
@@ -285,34 +312,35 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - {t: Win Base Layer, h: to}
-  - {t: iPad Base Layer, h: to}
+  - {t: Win Base Layer, h: toggle}
+  - {t: iPad Base Layer, h: toggle}
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
-  - {t: iPad Base Layer, h: to}
-  - {t: Win Base Layer, h: to}
-  - '&sys_reset'
-  - '&bootloader'
+  - {t: iPad Base Layer, h: toggle}
+  - {t: Win Base Layer, h: toggle}
+  - Reset
+  - Boot
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&bootloader'
-  - '&sys_reset'
+  - Boot
+  - Reset
   - {t: ▽, type: trans}
+  - {type: held}
   - BT CLR
-  - ''
   - ''
   - ''
   - BT CLR ALL
   - BT CLR ALL
   - ''
   - ''
-  - ''
   - BT CLR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
