@@ -84,7 +84,7 @@ layers:
   - {t: BS, h: Win Fn/Num Layer}
   - {t: ▽, type: trans}
   - {t: Ctl+SPACE, h: Default Layer}
-  - {t: 半/全, h: Global Settings}
+  - EMOJI
   - {t: ▽, type: trans}
   Win Fn/Num Layer:
   - F2
