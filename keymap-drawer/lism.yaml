@@ -84,7 +84,7 @@ layers:
   - {t: BS, h: Win Fn/Num Layer}
   - {t: ▽, type: trans}
   - {t: Ctl+SPACE, h: Default Layer}
-  - {t: ▽, type: trans}
+  - {t: 半/全, h: Global Settings}
   - {t: ▽, type: trans}
   Win Fn/Num Layer:
   - F2
@@ -169,8 +169,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Move↑
+  - Move↓
   - {t: ▽, type: trans}
   iPad Base Layer:
   - {t: ▽, type: trans}
