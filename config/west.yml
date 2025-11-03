@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/sekigon-gonnoc
     - name: caksoylar
       url-base: https://github.com/caksoylar
-    - name: 4mplelab
-      url-base: https://github.com/4mplelab
+    - name: syanaking
+      url-base: https://github.com/syanaking
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -20,7 +20,7 @@ manifest:
       remote: caksoylar
       revision: main
     - name: zmk-keyboards-LisM
-      remote: 4mplelab
+      remote: syanaking
       revision: main
       path: zmk-keyboards-LisM
   self:
