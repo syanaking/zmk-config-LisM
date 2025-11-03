@@ -115,7 +115,7 @@
             display-name = "Win Mouse/Nav Layer";
             bindings = <
 &kp DEL             &kp KP_N7        &kp KP_N8        &kp KP_N9        &kp KP_PLUS                        &kp PG_UP      &mkp MB1   &kp UP     &mkp MB2   &mkp MB3
-&macro double_zero  &kp KP_N4        &kp KP_N5        &kp KP_N6        &kp KP_MINUS                       &kp PG_DN      &kp LEFT   &kp DOWN   &kp RIGHT  &kp PRINT_SCREEN
+&double_zero        &kp KP_N4        &kp KP_N5        &kp KP_N6        &kp KP_MINUS                       &kp PG_DN      &kp LEFT   &kp DOWN   &kp RIGHT  &kp PRINT_SCREEN
 &kp KP_N0           &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_MULTIPLY                    &kp KP_DOT     &kp LC(C)  &kp LC(V)  &mkp MB4   &mkp MB5
 &kp KP_ENTER        &kp KP_DOT       &mo 1            &trans           &kp KP_DIVIDE    &trans    &trans  &trans         &trans     &trans     &trans     &trans
             >;
