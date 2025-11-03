@@ -20,7 +20,6 @@
             compatible = "zmk,behavior-macro";
             label = "EMOJI";
             #binding-cells = <0>;
-            // 正しいDTS構文: < > で囲み、内部はスペース区切り（カンマなし）
             bindings = <
                 &macro_press &kp CAPSLOCK
                 &macro_tap &kp E
@@ -33,7 +32,6 @@
             compatible = "zmk,behavior-macro";
             label = "DBL_0"; 
             #binding-cells = <0>;
-            // 正しいDTS構文: < > で囲み、内部はスペース区切り（カンマなし）
             bindings = <
                 &macro_press &kp KP_NUM_0
                 &macro_release &kp KP_NUM_0
@@ -65,10 +63,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp Q      &kp W       &kp E         &kp R           &kp T                                   &kp Y            &kp U           &kp I         &kp O       &kp P
-&kp A      &mt LALT S  &mt LSHIFT D  &mt LGUI F      &mt LCTRL G                             &mt RCTRL H      &mt RGUI J      &mt RSHIFT K  &mt RALT L  &lt 3 SEMICOLON
-&kp Z      &kp X       &kp C         &kp V           &kp B                                   &kp N            &kp M           &kp COMMA     &kp DOT     &kp SLASH
-&kp LCTRL  &mo 7       &lt 0 ESC     &kp LS(LG(N4))  &lt 2 SPACE                             &lt 3 TAB         &lt 3 RSHIFT      &lt 2 BACKSPACE  &kp LS(LG(N4))  &kp AT_SIGN   &mo 7       &kp ENTER
+&kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
+&kp A &mt LALT S &mt LSHIFT D &mt LGUI F &mt LCTRL G &mt RCTRL H &mt RGUI J &mt RSHIFT K &mt RALT L &lt 3 SEMICOLON
+&kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH
+&kp LCTRL &mo 7 &lt 0 ESC &kp LS(LG(N4)) &lt 2 SPACE &lt 3 TAB &lt 3 RSHIFT &lt 2 BACKSPACE &kp LS(LG(N4)) &kp AT_SIGN &mo 7 &kp ENTER
             >;
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
         };
@@ -77,10 +75,10 @@
         layer_1 {
             display-name = "Win Base Layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                  &trans           &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                                  &trans           &trans  &trans  &trans  &lt 3 SEMI
-&trans  &trans  &trans  &trans  &trans                                  &trans           &trans  &trans  &trans  &trans
-&trans  &trans  &mo 3   &trans  &lt 2 SPACE                             &lt 3 TAB         &lt 3 RSHIFT      &lt 2 BACKSPACE  &trans  &trans  &trans  &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &lt 3 SEMI
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &mo 3 &trans &lt 2 SPACE &lt 3 TAB &lt 3 RSHIFT &lt 2 BACKSPACE &trans &trans &trans &trans
             >;
             sensor-bindings = <&encoder_msc SCRL_LEFT SCRL_RIGHT>;
         };
@@ -89,10 +87,10 @@
         layer_2 {
             display-name = "Win Fn/Num Layer";
             bindings = <
-&kp F2    &kp F3             &kp F4     &kp F5        &kp F6                                 &kp F7            &kp F8            &kp F9           &kp F10                &kp F11
-&kp EXCL  &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR    &kp PERCENT                            &kp AMPERSAND     &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
-&kp F1    &kp SEMI           &kp COLON  &kp LEFT_WIN  &kp PIPE                               &kp LEFT_BRACKET  &kp RBRC          &kp BSLH              &kp AT_SIGN            &kp F12
-&trans    &trans             &trans     &trans        &trans                                 &trans            &trans            &trans            &trans                 &trans
+&kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
+&kp EXCL &kp DOUBLE_QUOTES &kp HASH &kp DOLLAR &kp PERCENT &kp AMPERSAND &kp SINGLE_QUOTE &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp TILDE
+&kp F1 &kp SEMI &kp COLON &kp LEFT_WIN &kp PIPE &kp LEFT_BRACKET &kp RBRC &kp BSLH &kp AT_SIGN &kp F12
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
         };
@@ -100,12 +98,11 @@
        // L3: Windows マウス / ナビゲーションレイヤー (Keyball L2のマウス機能を移植)
         layer_3 {
             display-name = "Win Mouse/Nav Layer";
-            // L3の4の左隣に「00」マクロを配置
             bindings = <
-&kp DEL          &kp KP_NUM_7  &kp KP_NUM_8  &kp KP_NUM_9  &kp KP_PLUS                        &kp PAGE_UP    &mkp MB1   &kp UP     &mkp MB2   &mkp MB3
-&macro double_zero &kp KP_NUM_4  &kp KP_NUM_5  &kp KP_NUM_6  &kp KP_MINUS                       &kp PAGE_DOWN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp PRINTSCREEN
-&kp KP_NUM_0  &kp KP_NUM_1  &kp KP_NUM_2  &kp KP_NUM_3  &kp KP_MULTIPLY                    &kp KP_DOT     &kp LC(C)  &kp LC(V)  &mkp MB4   &mkp MB5
-&kp KP_ENTER     &kp KP_DOT       &mo 1         &trans           &kp KP_DIVIDE    &trans    &trans  &trans         &trans     &trans     &trans     &trans // Layer 3 最終行を修正 (12個に)
+&kp DEL &kp KP_NUM_7 &kp KP_NUM_8 &kp KP_NUM_9 &kp KP_PLUS &kp PAGE_UP &mkp MB1 &kp UP &mkp MB2 &mkp MB3
+&macro double_zero &kp KP_NUM_4 &kp KP_NUM_5 &kp KP_NUM_6 &kp KP_MINUS &kp PAGE_DOWN &kp LEFT &kp DOWN &kp RIGHT &kp PRINTSCREEN
+&kp KP_NUM_0 &kp KP_NUM_1 &kp KP_NUM_2 &kp KP_NUM_3 &kp KP_MULTIPLY &kp KP_DOT &kp LC(C) &kp LC(V) &mkp MB4 &mkp MB5
+&kp KP_ENTER &kp KP_DOT &mo 1 &trans &kp KP_DIVIDE &trans &trans &trans &trans &trans &trans &trans
             >;
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
         };
@@ -114,10 +111,10 @@
         layer_4 {
             display-name = "iPad Base Layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans
-&mo 6   &mo 5   &mo 5   &trans  &mo 6   &trans                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&mo 6 &mo 5 &mo 5 &trans &mo 6 &trans &trans &trans &trans &trans &trans &trans
             >;
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
         };
@@ -126,10 +123,10 @@
         layer_5 {
             display-name = "iPad Fn/Num Layer";
             bindings = <
-&kp F2  &kp F3  &kp F4  &kp F5     &kp F6                               &kp F7    &kp F8    &kp F9   &kp F10   &kp F11
-&kp N7  &kp N8  &kp N9  &kp MINUS  &kp EQUAL                            &kp N4    &kp N5    &kp N6   &kp PLUS  &kp SLASH
-&kp N1  &kp N2  &kp N3  &kp DOT    &kp N0                               &kp LBRC  &kp RBRC  &kp SQT  &kp DQT   &kp BSLH
-&trans  &trans  &trans  &trans     &trans     &trans                       &trans  &trans    &trans    &trans   &trans    &kp F12
+&kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
+&kp N7 &kp N8 &kp N9 &kp MINUS &kp EQUAL &kp N4 &kp N5 &kp N6 &kp PLUS &kp SLASH
+&kp N1 &kp N2 &kp N3 &kp DOT &kp N0 &kp LBRC &kp RBRC &kp SQT &kp DQT &kp BSLH
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp F12
             >;
         };
 
@@ -137,10 +134,10 @@
         layer_6 {
             display-name = "iPad Mouse/Nav Layer";
             bindings = <
-&trans          &kp C_HOME    &kp PG_UP  &kp END  &trans                            &trans          &trans           &trans     &trans      &trans
-&trans          &msc SCRL_UP  &trans     &trans   &trans                            &mmv MOVE_UP    &mkp LCLK        &mkp RCLK  &mkp MB3    &trans
-&msc SCRL_DOWN  &trans        &trans     &trans   &mmv MOVE_LEFT                    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB4   &kp C_HOME  &trans
-&trans          &trans        &trans     &trans   &trans          &trans    &trans  &trans          &trans           &mkp MB5
+&trans &kp C_HOME &kp PG_UP &kp END &trans &trans &trans &trans &trans &trans
+&trans &msc SCRL_UP &trans &trans &trans &mmv MOVE_UP &mkp LCLK &mkp RCLK &mkp MB3 &trans
+&msc SCRL_DOWN &trans &trans &trans &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &mkp MB4 &kp C_HOME &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &mkp MB5 &trans
             >;
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
         }; 
@@ -149,12 +146,11 @@
         layer_7 { 
             display-name = "Global Settings";
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&to 1         &to 4         &none         &none         &none                                           &none         &none         &none         &to 4         &to 1
-&sys_reset    &bootloader   &trans        &trans        &trans                                          &trans        &trans        &trans        &bootloader   &sys_reset
-&trans        &bt BT_CLR    &none         &none         &none         &bt BT_CLR_ALL    &bt BT_CLR_ALL  &none         &none         &none         &bt BT_CLR    &trans
+&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
+&to 1 &to 4 &none &none &none &none &none &none &to 4 &to 1
+&sys_reset &bootloader &trans &trans &trans &trans &trans &trans &bootloader &sys_reset
+&trans &bt BT_CLR &none &none &none &bt BT_CLR_ALL &bt BT_CLR_ALL &none &none &none &bt BT_CLR &trans
             >;
         }; 
     };
-
 }; // keymap ノード終了
