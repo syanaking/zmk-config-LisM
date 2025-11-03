@@ -117,10 +117,10 @@
 &kp DEL       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS                        &kp PG_UP     &mkp MB1   &kp UP        &mkp MB2        &mkp MB3
 &double_zero  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS                       &kp PG_DN     &kp LEFT   &kp DOWN      &kp RIGHT       &kp PRINTSCREEN
 &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY                    &kp KP_COMMA  &kp LC(C)  &kp LC(V)     &mkp MB4        &mkp MB5
-&kp KP_ENTER  &kp KP_DOT    &kp KP_COMMA  &trans        &kp KP_DIVIDE    &trans    &trans  &trans        &trans     &mmv MOVE_UP  &mmv MOVE_DOWN  &trans
+&kp KP_ENTER  &kp KP_DOT    &kp KP_COMMA  &trans        &kp KP_DIVIDE    &trans    &trans  &trans        &trans     &msc SCRL_UP  &msc SCRL_DOWN  &trans
             >;
 
-            sensor-bindings = <&encoder_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
+            sensor-bindings = <&encoder_msc SCRL_LEFT SCRL_RIGHT>;
         };
 
         // L4: iPad ベースレイヤー
