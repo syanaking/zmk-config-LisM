@@ -86,10 +86,10 @@
         layer_1 {
             display-name = "Win Base Layer";
             bindings = <
-&trans  &trans   &trans           &trans  &trans                                  &trans           &trans  &trans           &trans                     &trans
-&trans  &trans   &trans           &trans  &trans                                  &trans           &trans  &trans           &trans                     &lt 3 SEMI
-&trans  &trans   &trans           &trans  &trans                                  &trans           &trans  &trans           &trans                     &trans
-&trans  &kp ESC  &lt 0 LC(SPACE)  &trans  &lt 2 SPACE  &lt 3 TAB    &lt 3 RSHIFT  &lt 2 BACKSPACE  &trans  &lt 0 LC(SPACE)  &lt 7 LANG_ZENKAKUHANKAKU  &trans
+&trans  &trans   &trans           &trans  &trans                                  &trans           &trans  &trans           &trans  &trans
+&trans  &trans   &trans           &trans  &trans                                  &trans           &trans  &trans           &trans  &lt 3 SEMI
+&trans  &trans   &trans           &trans  &trans                                  &trans           &trans  &trans           &trans  &trans
+&trans  &kp ESC  &lt 0 LC(SPACE)  &trans  &lt 2 SPACE  &lt 3 TAB    &lt 3 RSHIFT  &lt 2 BACKSPACE  &trans  &lt 0 LC(SPACE)  &emoji  &trans
             >;
 
             sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
