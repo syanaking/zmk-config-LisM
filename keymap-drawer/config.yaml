@@ -16,7 +16,7 @@ parse_config:
     '&mmv MOVE_DOWN': Move↓
     '&mmv MOVE_LEFT': Move←
     '&mmv MOVE_RIGHT': Move→
-    '&double_zero': 00
+    '&double_zero': "00"
     '&emoji': EMOJI
 
   zmk_keycode_map:
