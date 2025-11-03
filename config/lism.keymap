@@ -62,7 +62,7 @@
                 &kp DOT             &kp SLASH
                 // 既存のレイヤー切り替え（L1/L2/L3）をL0からL2/L3へのモーメンタリに再利用
                 &tog 1             &mo 7             &lt 1 ESC             &kp LS(LG(N4))          &lt 2 SPACE       &lt 3 TAB      
-                &lt 3 SHIFT  &lt 2 BACKSPACE  &kp LS(LG(N4))   &mo 7 // ここをL7 (Global Settings) に変更             &kp @             &kp ENTER
+                &lt 3 RSHIFT  &lt 2 BACKSPACE  &kp LS(LG(N4))   &mo 7 // ここをL7 (Global Settings) に変更    &kp AT_SIGN    &kp ENTER
             >;
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
         };
@@ -80,7 +80,7 @@
                 &trans             &trans
                 // L2/L3へのアクセスを再定義
                 &trans           &trans             &mo 2               &trans          &lt 2 SPACE             &lt 3 TAB
-                &lt 3 SHIFT          &lt 2 BACKSPACE             &trans           &trans             &trans              &trans 
+                &lt 3 RSHIFT          &lt 2 BACKSPACE             &trans           &trans             &trans              &trans 
             >;
         };
 
