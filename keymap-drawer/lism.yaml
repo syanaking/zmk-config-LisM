@@ -20,7 +20,7 @@ layers:
   - {t: J, h: RGUI}
   - {t: K, h: RSHIFT}
   - {t: L, h: RALT}
-  - {t: ;, h: Win Mouse/Nav Layer}
+  - {t: '=', h: Win Mouse/Nav Layer}
   - Z
   - X
   - C
@@ -30,17 +30,17 @@ layers:
   - M
   - ','
   - .
-  - /
+  - {t: /, h: Win Fn/Num Layer}
   - LCTRL
   - Global Settings
-  - {t: Ctl+SPACE, h: Win Base Layer}
+  - {t: 半/全, h: Global Settings}
   - Sft+Gui+4
-  - {t: SPACE, h: Win Fn/Num Layer}
-  - {t: TAB, h: Win Mouse/Nav Layer}
-  - {t: RSHIFT, h: Win Mouse/Nav Layer}
+  - {t: SPACE, h: Win Mouse/Nav Layer}
+  - {t: TAB, h: Win Fn/Num Layer}
+  - RIGHT SHIFT
   - {t: BS, h: Win Fn/Num Layer}
   - Sft+Gui+4
-  - {t: Ctl+SPACE, h: Win Base Layer}
+  - {t: Ctl+SPACE, h: Global Settings}
   - Global Settings
   - ENTER
   Win Base Layer:
@@ -63,7 +63,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: SEMI, h: Win Mouse/Nav Layer}
+  - {t: '=', h: Win Mouse/Nav Layer}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -73,18 +73,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: /, h: Win Fn/Num Layer}
   - {t: ▽, type: trans}
   - ESC
-  - {t: Ctl+SPACE, h: Default Layer, type: held}
+  - {t: Ctl+SPACE, h: Default Layer}
   - {t: ▽, type: trans}
-  - {t: SPACE, h: Win Fn/Num Layer}
-  - {t: TAB, h: Win Mouse/Nav Layer}
-  - {t: RSHIFT, h: Win Mouse/Nav Layer}
+  - {t: SPACE, h: Win Mouse/Nav Layer}
+  - {t: TAB, h: Win Fn/Num Layer}
+  - RIGHT SHIFT
   - {t: BS, h: Win Fn/Num Layer}
   - {t: ▽, type: trans}
   - {t: Ctl+SPACE, h: Default Layer}
-  - EMOJI
+  - {t: 半/全, h: Global Settings}
   - {t: ▽, type: trans}
   Win Fn/Num Layer:
   - F2
@@ -116,12 +116,12 @@ layers:
   - RBRC
   - BSLH
   - '@'
-  - F12
+  - {t: F12, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -314,12 +314,12 @@ layers:
   - {t: BT, h: '4'}
   - {t: Win Base Layer, h: toggle}
   - {t: iPad Base Layer, h: toggle}
+  - {t: Default Layer, h: toggle}
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - {t: Default Layer, h: toggle}
   - {t: iPad Base Layer, h: toggle}
   - {t: Win Base Layer, h: toggle}
   - Reset
