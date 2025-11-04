@@ -100,10 +100,10 @@
         layer_2 {
             display-name = "Win Fn/Num Layer";
             bindings = <
-&kp F2    &kp F3             &kp F4     &kp F5          &kp F6                         &kp F7            &kp F8            &kp F9                &kp F10                &kp F11
-&kp EXCL  &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR      &kp PERCENT                    &kp AMPERSAND     &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
-&kp F1    &kp SEMI           &kp COLON  &kp UNDERSCORE  &kp PIPE                       &kp LEFT_BRACKET  &kp RBRC          &kp BSLH              &kp AT_SIGN            &kp F12
-&trans    &trans             &trans     &trans          &trans       &trans    &trans  &trans            &trans            &trans                &trans                 &trans
+&kp F2    &kp F3             &kp F4     &kp F5          &kp F6                         &kp F7            &kp F8             &kp F9                &kp F10                &kp F11
+&kp EXCL  &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR      &kp PERCENT                    &kp AMPERSAND     &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
+&kp F1    &kp SEMI           &kp COLON  &kp UNDERSCORE  &kp PIPE                       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BSLH              &kp AT_SIGN            &kp F12
+&trans    &trans             &trans     &trans          &trans       &trans    &trans  &trans            &trans             &trans                &trans                 &trans
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
@@ -117,7 +117,7 @@
 &kp DEL       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS                        &kp PG_UP  &mkp MB1   &kp UP        &mkp MB2        &mkp MB3
 &double_zero  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS                       &kp PG_DN  &kp LEFT   &kp DOWN      &kp RIGHT       &kp PRINTSCREEN
 &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY                    &kp COMMA  &kp LC(C)  &kp LC(V)     &mkp MB4        &mkp MB5
-&kp EQUAL     &kp DOT       &kp COMMA     &trans        &kp KP_DIVIDE    &trans    &trans  &trans     &trans     &msc SCRL_UP  &msc SCRL_DOWN  &trans
+&kp MINUS     &kp DOT       &kp COMMA     &trans        &kp KP_DIVIDE    &trans    &trans  &trans     &trans     &msc SCRL_UP  &msc SCRL_DOWN  &trans
             >;
 
             sensor-bindings = <&encoder_msc SCRL_LEFT SCRL_RIGHT>;
