@@ -113,7 +113,7 @@ layers:
   - UNDERSCORE
   - '|'
   - '['
-  - RBRC
+  - ']'
   - BSLH
   - '@'
   - {t: F12, type: held}
@@ -160,7 +160,7 @@ layers:
   - Ctl+V
   - M4
   - M5
-  - '='
+  - '-'
   - .
   - ','
   - {t: ▽, type: trans}
