@@ -97,7 +97,7 @@
         // L0: Windows US配列 ベースレイヤー
 
         default_layer {
-            display-name = "US Base Layer";
+            display-name = "Windows US Base";
             bindings = <
 &kp Q      &kp W       &kp E         &kp R           &kp T                                      &kp Y            &kp U           &kp I            &kp O       &kp P
 &kp A      &mt LALT S  &mt LSHIFT D  &mt LGUI F      &mt LCTRL G                                &mt RCTRL H      &mt RGUI J      &mt RSHIFT K     &mt RALT L  &lt 8 MINUS
@@ -111,12 +111,12 @@
         // L1: Windows JIS配列 ベースレイヤー
 
         layer_1 {
-            display-name = "JIS Base Layer";
+            display-name = "Windows JIS Base";
             bindings = <
 &kp Q      &kp W       &kp E         &kp R           &kp T                                         &kp Y            &kp U           &kp I            &kp O       &kp P
 &kp A      &mt LALT S  &mt LSHIFT D  &mt LGUI F      &mt LCTRL G                                   &mt RCTRL H      &mt RGUI J      &mt RSHIFT K     &mt RALT L  &lt 3 MINUS
 &kp Z      &kp X       &kp C         &kp V           &kp B                                         &kp N            &kp M           &kp COMMA        &kp DOT     &lt 2 SLASH
-&kp LCTRL  &mo 9       &lt 9 JP_HANZEN  &kp LS(LG(N4))  &lt 3 SPACE  &lt 2 TAB    &kp RIGHT_SHIFT  &lt 2 BACKSPACE  &kp LS(LG(N4))  &lt 9 LC(SPACE)  &mo 9       &kp ENTER
+&kp LCTRL  &mo 9       &lt 9 JP_HANZEN  &kp LS(LG(N4))  &lt 3 SPACE  &lt 2 TAB    &kp RIGHT_SHIFT  &lt 2 BACKSPACE  &kp LS(LG(N4))  &lt 9 JP_HANZEN  &mo 9       &kp ENTER
             >;
 
             sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
@@ -125,7 +125,7 @@
         // L2: Windows JIS配列 Fn / 数字 / 記号レイヤー
 
         layer_2 {
-            display-name = "JIS Fn/Num Layer";
+            display-name = "Windows JIS Fn/Num";
             bindings = <
 &kp F2    &kp F3             &kp F4     &kp F5          &kp F6                         &kp F7            &kp F8             &kp F9                &kp F10                &kp F11
 &kp EXCL  &kp JP_DQUOTE      &kp HASH      &kp DOLLAR         &kp PERCENT                    &kp JP_AMPERSAND  &kp JP_QUOTE     &kp JP_LPAREN  &kp JP_RPAREN  &kp JP_TILDE
@@ -139,12 +139,12 @@
         // L3: Windows JIS配列 マウス / ナビゲーションレイヤー
 
         layer_3 {
-            display-name = "JIS Mouse/Nav Layer";
+            display-name = "Windows JIS Mouse/Nav";
             bindings = <
-&kp DEL       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS                        &kp PG_UP  &mkp MB1   &kp UP        &mkp MB2        &mkp MB3
-&double_zero  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS                       &kp PG_DN  &kp LEFT   &kp DOWN      &kp RIGHT       &kp PRINTSCREEN
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY                    &kp COMMA  &kp LC(C)  &kp LC(V)     &mkp MB4        &mkp MB5
-&kp JP_EQUAL  &kp DOT       &kp COMMA     &trans        &kp KP_DIVIDE    &trans    &trans  &trans     &trans     &msc SCRL_UP  &msc SCRL_DOWN  &trans
+&kp DEL       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS                        &kp PG_UP  &mkp MB1   &kp UP          &mkp MB2         &mkp MB3
+&double_zero  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS                       &kp PG_DN  &kp LEFT   &kp DOWN        &kp RIGHT        &kp PRINTSCREEN
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY                    &kp LC(X)  &kp LC(C)  &kp LC(V)       &mkp MB4         &mkp MB5
+&kp JP_EQUAL  &kp DOT       &kp COMMA     &trans        &kp KP_DIVIDE    &trans    &trans  &trans     &trans     &mt RALT LC(Z)  &mt RCTRL LC(Y)  &trans
             >;
 
             sensor-bindings = <&encoder_msc SCRL_LEFT SCRL_RIGHT>;
@@ -153,12 +153,12 @@
         // L4: iPad ベースレイヤー
 
         layer_4 {
-            display-name = "iPad Base Layer";
+            display-name = "iPad Base";
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&mo 6   &mo 5   &mo 5   &trans  &mo 6   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp Q      &kp W       &kp E         &kp R           &kp T                                      &kp Y            &kp U           &kp I            &kp O       &kp P
+&kp A      &mt LALT S  &mt LSHIFT D  &mt LGUI F      &mt LCTRL G                                &mt RCTRL H      &mt RGUI J      &mt RSHIFT K     &mt RALT L  &lt 6 MINUS
+&kp Z      &kp X       &kp C         &kp V           &kp B                                      &kp N            &kp M           &kp COMMA        &kp DOT     &lt 5 SLASH
+&kp LCTRL  &mo 9       &kp LC(SPACE) &kp LS(LG(N4))  &lt 6 SPACE  &lt 5 TAB    &kp RIGHT_SHIFT  &lt 5 BACKSPACE  &kp LS(LG(N4))  &kp LC(SPACE)  &mo 9       &kp ENTER
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
@@ -167,33 +167,35 @@
         // L5: iPad Fn / 数字 / 記号レイヤー
 
         layer_5 {
-            display-name = "iPad Fn/Num Layer";
+            display-name = "iPad Fn/Num";
             bindings = <
-&kp F2  &kp F3  &kp F4  &kp F5     &kp F6                       &kp F7    &kp F8    &kp F9   &kp F10   &kp F11
-&kp N7  &kp N8  &kp N9  &kp MINUS  &kp EQUAL                    &kp N4    &kp N5    &kp N6   &kp PLUS  &kp SLASH
-&kp N1  &kp N2  &kp N3  &kp DOT    &kp N0                       &kp LBRC  &kp RBRC  &kp SQT  &kp DQT   &kp BSLH
-&trans  &trans  &trans  &trans     &trans     &trans    &trans  &trans    &trans    &trans   &trans    &kp F12
+&kp F2    &kp F3             &kp F4     &kp F5          &kp F6                         &kp F7            &kp F8             &kp F9                &kp F10                &kp F11
+&kp EXCL  &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR      &kp PERCENT                    &kp AMPERSAND     &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
+&kp F1    &kp SEMI           &kp COLON  &kp UNDERSCORE  &kp PIPE                       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BSLH              &kp AT_SIGN            &kp F12
+&trans    &trans             &trans     &trans          &trans       &trans    &trans  &trans            &trans             &trans                &trans                 &trans
             >;
+
+            sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
         };
 
         // L6: iPad マウス / ナビゲーションレイヤー
 
         layer_6 {
-            display-name = "iPad Mouse/Nav Layer";
+            display-name = "iPad Mouse/Nav";
             bindings = <
-&trans          &kp HOME      &kp PG_UP  &kp END  &trans                            &trans          &trans           &trans     &trans        &trans
-&trans          &msc SCRL_UP  &trans     &trans   &trans                            &mmv MOVE_UP    &mkp LCLK        &mkp RCLK  &mkp MB3      &trans
-&msc SCRL_DOWN  &trans        &trans     &trans   &mmv MOVE_LEFT                    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB4   &kp LC(HOME)  &trans
-&trans          &trans        &trans     &trans   &trans          &trans    &trans  &trans          &trans           &trans     &mkp MB5      &trans
+&kp DEL       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS                        &kp PG_UP  &mkp MB1   &kp UP          &mkp MB2         &mkp MB3
+&double_zero  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS                       &kp PG_DN  &kp LEFT   &kp DOWN        &kp RIGHT        &kp LC(HOME)
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY                    &kp LC(X)  &kp LC(C)  &kp LC(V)       &mkp MB4         &mkp MB5
+&kp EQUAL     &kp DOT       &kp COMMA     &trans        &kp KP_DIVIDE    &trans    &trans  &trans     &trans     &mt RALT LC(Z)  &mt RCTRL LC(Y)  &trans
             >;
 
-            sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&encoder_msc SCRL_LEFT SCRL_RIGHT>;
         };
 
         // L7: Windows US配列 Fn / 数字 / 記号レイヤー
 
         layer_7 {
-            display-name = "US Fn/Num Layer";
+            display-name = "Windows US Fn/Num";
             bindings = <
 &kp F2    &kp F3             &kp F4     &kp F5          &kp F6                         &kp F7            &kp F8             &kp F9                &kp F10                &kp F11
 &kp EXCL  &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR      &kp PERCENT                    &kp AMPERSAND     &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
@@ -207,12 +209,12 @@
         // L8: Windows US配列 マウス / ナビゲーションレイヤー
 
         layer_8 {
-            display-name = "US Mouse/Nav Layer";
+            display-name = "Windows US Mouse/Nav";
             bindings = <
-&kp DEL       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS                        &kp PG_UP  &mkp MB1   &kp UP        &mkp MB2        &mkp MB3
-&double_zero  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS                       &kp PG_DN  &kp LEFT   &kp DOWN      &kp RIGHT       &kp PRINTSCREEN
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY                    &kp COMMA  &kp LC(C)  &kp LC(V)     &mkp MB4        &mkp MB5
-&kp EQUAL     &kp DOT       &kp COMMA     &trans        &kp KP_DIVIDE    &trans    &trans  &trans     &trans     &msc SCRL_UP  &msc SCRL_DOWN  &trans
+&kp DEL       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS                        &kp PG_UP  &mkp MB1   &kp UP          &mkp MB2         &mkp MB3
+&double_zero  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS                       &kp PG_DN  &kp LEFT   &kp DOWN        &kp RIGHT        &kp PRINTSCREEN
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY                    &kp LC(X)  &kp LC(C)  &kp LC(V)       &mkp MB4         &mkp MB5
+&kp EQUAL     &kp DOT       &kp COMMA     &trans        &kp KP_DIVIDE    &trans    &trans  &trans     &trans     &mt RALT LC(Z)  &mt RCTRL LC(Y)  &trans
             >;
 
             sensor-bindings = <&encoder_msc SCRL_LEFT SCRL_RIGHT>;
