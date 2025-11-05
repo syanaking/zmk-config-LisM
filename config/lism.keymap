@@ -107,12 +107,9 @@
         // タップでバッククォート、ホールドでVS Codeコマンドパレット
 
         backquote_or_cmd: backquote_or_cmd_behavior {
-            compatible = "zmk,behavior-hold-tap";
+            compatible = "zmk,behavior-csmart";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <300>;
-            quick-tap-ms = <200>;
-            bindings = <&kp LC(LS(P)) &kp GRAVE>;
+            bindings = <&kp GRAVE &vscode_cmd_palette>;
         };
     };
 
