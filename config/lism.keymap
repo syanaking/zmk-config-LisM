@@ -112,7 +112,7 @@
             flavor = "balanced";
             tapping-term-ms = <300>;
             quick-tap-ms = <200>;
-            bindings = <&vscode_cmd_palette &kp GRAVE>;
+            bindings = <&kp LC(LS(P)) &kp GRAVE>;
         };
     };
 
