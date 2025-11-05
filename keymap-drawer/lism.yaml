@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: lism}
 layers:
-  US Base Layer:
+  Windows US Base:
   - Q
   - W
   - E
@@ -20,7 +20,7 @@ layers:
   - {t: J, h: RGUI}
   - {t: K, h: RSHIFT}
   - {t: L, h: RALT}
-  - {t: '-', h: US Mouse/Nav Layer}
+  - {t: '-', h: Windows US Mouse/Nav}
   - Z
   - X
   - C
@@ -30,20 +30,20 @@ layers:
   - M
   - ','
   - .
-  - {t: /, h: US Fn/Num Layer}
+  - {t: /, h: Windows US Fn/Num}
   - LCTRL
   - Global Settings
   - {t: '`', h: Global Settings}
   - Sft+Gui+4
-  - {t: SPACE, h: US Mouse/Nav Layer}
-  - {t: TAB, h: US Fn/Num Layer}
+  - {t: SPACE, h: Windows US Mouse/Nav}
+  - {t: TAB, h: Windows US Fn/Num}
   - RIGHT SHIFT
-  - {t: BS, h: US Fn/Num Layer}
+  - {t: BS, h: Windows US Fn/Num}
   - Sft+Gui+4
   - {t: Ctl+SPACE, h: Global Settings}
   - Global Settings
   - ENTER
-  JIS Base Layer:
+  Windows JIS Base:
   - Q
   - W
   - E
@@ -63,7 +63,7 @@ layers:
   - {t: J, h: RGUI}
   - {t: K, h: RSHIFT}
   - {t: L, h: RALT}
-  - {t: '-', h: JIS Mouse/Nav Layer}
+  - {t: '-', h: Windows JIS Mouse/Nav}
   - Z
   - X
   - C
@@ -73,20 +73,20 @@ layers:
   - M
   - ','
   - .
-  - {t: /, h: JIS Fn/Num Layer}
+  - {t: /, h: Windows JIS Fn/Num}
   - LCTRL
   - Global Settings
   - {t: '`', h: Global Settings}
   - Sft+Gui+4
-  - {t: SPACE, h: JIS Mouse/Nav Layer}
-  - {t: TAB, h: JIS Fn/Num Layer}
+  - {t: SPACE, h: Windows JIS Mouse/Nav}
+  - {t: TAB, h: Windows JIS Fn/Num}
   - RIGHT SHIFT
-  - {t: BS, h: JIS Fn/Num Layer}
+  - {t: BS, h: Windows JIS Fn/Num}
   - Sft+Gui+4
-  - {t: Ctl+SPACE, h: Global Settings}
+  - {t: '`', h: Global Settings}
   - Global Settings
   - ENTER
-  JIS Fn/Num Layer:
+  Windows JIS Fn/Num:
   - F2
   - F3
   - F4
@@ -129,7 +129,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  JIS Mouse/Nav Layer:
+  Windows JIS Mouse/Nav:
   - DEL
   - '7'
   - '8'
@@ -155,7 +155,7 @@ layers:
   - '2'
   - '3'
   - KP MULTIPLY
-  - ','
+  - Ctl+X
   - Ctl+C
   - Ctl+V
   - M4
@@ -169,139 +169,53 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Scroll↑
-  - Scroll↓
+  - {t: Ctl+Z, h: RALT}
+  - {t: Ctl+Y, h: RCTRL}
   - {t: ▽, type: trans}
-  iPad Base Layer:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - iPad Mouse/Nav Layer
-  - iPad Fn/Num Layer
-  - iPad Fn/Num Layer
-  - {t: ▽, type: trans}
-  - iPad Mouse/Nav Layer
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  iPad Fn/Num Layer:
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - '7'
-  - '8'
-  - '9'
-  - '-'
-  - '='
-  - '4'
-  - '5'
-  - '6'
-  - +
-  - /
-  - '1'
-  - '2'
-  - '3'
+  iPad Base:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - {t: S, h: LALT}
+  - {t: D, h: LSHIFT}
+  - {t: F, h: LGUI}
+  - {t: G, h: LCTRL}
+  - {t: H, h: RCTRL}
+  - {t: J, h: RGUI}
+  - {t: K, h: RSHIFT}
+  - {t: L, h: RALT}
+  - {t: '-', h: iPad Mouse/Nav}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
   - .
-  - '0'
-  - LBRC
-  - RBRC
-  - SQT
-  - DQT
-  - BSLH
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F12
-  iPad Mouse/Nav Layer:
-  - {t: ▽, type: trans}
-  - HOME
-  - PG UP
-  - END
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Scroll↑
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Move↑
-  - LCLK
-  - RCLK
-  - M3
-  - {t: ▽, type: trans}
-  - Scroll↓
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Move←
-  - Move↓
-  - Move→
-  - M4
-  - Ctl+HOME
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - M5
-  - {t: ▽, type: trans}
-  US Fn/Num Layer:
+  - {t: /, h: iPad Fn/Num}
+  - LCTRL
+  - Global Settings
+  - Ctl+SPACE
+  - Sft+Gui+4
+  - {t: SPACE, h: iPad Mouse/Nav}
+  - {t: TAB, h: iPad Fn/Num}
+  - RIGHT SHIFT
+  - {t: BS, h: iPad Fn/Num}
+  - Sft+Gui+4
+  - Ctl+SPACE
+  - Global Settings
+  - ENTER
+  iPad Fn/Num:
   - F2
   - F3
   - F4
@@ -344,7 +258,93 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  US Mouse/Nav Layer:
+  iPad Mouse/Nav:
+  - DEL
+  - '7'
+  - '8'
+  - '9'
+  - KP PLUS
+  - PG UP
+  - M1
+  - ↑
+  - M2
+  - M3
+  - '00'
+  - '4'
+  - '5'
+  - '6'
+  - KP MINUS
+  - PG DN
+  - ←
+  - ↓
+  - →
+  - {t: Ctl+HOME, type: held}
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - KP MULTIPLY
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - M4
+  - M5
+  - '='
+  - .
+  - ','
+  - {t: ▽, type: trans}
+  - KP DIVIDE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: Ctl+Z, h: RALT}
+  - {t: Ctl+Y, h: RCTRL}
+  - {t: ▽, type: trans}
+  Windows US Fn/Num:
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - '!'
+  - '"'
+  - '#'
+  - $
+  - '%'
+  - '&'
+  - ''''
+  - (
+  - )
+  - '~'
+  - F1
+  - SEMI
+  - ':'
+  - UNDERSCORE
+  - '|'
+  - '['
+  - ']'
+  - BSLH
+  - '@'
+  - {t: F12, type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Windows US Mouse/Nav:
   - DEL
   - '7'
   - '8'
@@ -370,7 +370,7 @@ layers:
   - '2'
   - '3'
   - KP MULTIPLY
-  - ','
+  - Ctl+X
   - Ctl+C
   - Ctl+V
   - M4
@@ -384,8 +384,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Scroll↑
-  - Scroll↓
+  - {t: Ctl+Z, h: RALT}
+  - {t: Ctl+Y, h: RCTRL}
   - {t: ▽, type: trans}
   Global Settings:
   - {t: BT, h: '0'}
@@ -398,16 +398,16 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - {t: JIS Base Layer, h: toggle}
-  - {t: iPad Base Layer, h: toggle}
-  - {t: US Base Layer, h: toggle}
+  - {t: Windows JIS Base, h: toggle}
+  - {t: iPad Base, h: toggle}
+  - {t: Windows US Base, h: toggle}
   - ''
   - ''
   - ''
   - ''
-  - {t: US Base Layer, h: toggle}
-  - {t: iPad Base Layer, h: toggle}
-  - {t: JIS Base Layer, h: toggle}
+  - {t: Windows US Base, h: toggle}
+  - {t: iPad Base, h: toggle}
+  - {t: Windows JIS Base, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Reset
