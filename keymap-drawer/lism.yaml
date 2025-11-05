@@ -32,7 +32,7 @@ layers:
   - .
   - {t: /, h: Windows US Fn/Num}
   - LCTRL
-  - Global Settings
+  - {t: ESC, h: Global Settings}
   - {t: '`', h: Global Settings}
   - Sft+Gui+4
   - {t: SPACE, h: Windows US Mouse/Nav}
@@ -41,7 +41,7 @@ layers:
   - {t: BS, h: Windows US Fn/Num}
   - Sft+Gui+4
   - {t: Ctl+SPACE, h: Global Settings}
-  - Global Settings
+  - {t: ESC, h: Global Settings}
   - ENTER
   Windows JIS Base:
   - Q
@@ -75,7 +75,7 @@ layers:
   - .
   - {t: /, h: Windows JIS Fn/Num}
   - LCTRL
-  - Global Settings
+  - {t: ESC, h: Global Settings}
   - {t: '`', h: Global Settings}
   - Sft+Gui+4
   - {t: SPACE, h: Windows JIS Mouse/Nav}
@@ -84,7 +84,7 @@ layers:
   - {t: BS, h: Windows JIS Fn/Num}
   - Sft+Gui+4
   - {t: '`', h: Global Settings}
-  - Global Settings
+  - {t: ESC, h: Global Settings}
   - ENTER
   Windows JIS Fn/Num:
   - F2
@@ -111,7 +111,7 @@ layers:
   - SEMI
   - ''''
   - Sft+0x87
-  - BSLH
+  - '&backquote_or_cmd'
   - ']'
   - BSLH
   - '0x89'
@@ -204,7 +204,7 @@ layers:
   - .
   - {t: /, h: iPad Fn/Num}
   - LCTRL
-  - Global Settings
+  - {t: ESC, h: Global Settings}
   - Ctl+SPACE
   - Sft+Gui+4
   - {t: SPACE, h: iPad Mouse/Nav}
@@ -213,7 +213,7 @@ layers:
   - {t: BS, h: iPad Fn/Num}
   - Sft+Gui+4
   - Ctl+SPACE
-  - Global Settings
+  - {t: ESC, h: Global Settings}
   - ENTER
   iPad Fn/Num:
   - F2
