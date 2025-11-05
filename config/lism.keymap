@@ -104,13 +104,9 @@
             bindings = <&kp>, <&kp>;
         };
 
-        // タップでバッククォート、ホールドでVS Codeコマンドパレット
+        // タップでバッククォート、ホールドでレイヤー10（コマンドパレット用）に切り替え
+        // レイヤー10でコマンドパレットを開くキーを配置
 
-        backquote_or_cmd: backquote_or_cmd_behavior {
-            compatible = "zmk,behavior-csmart";
-            #binding-cells = <2>;
-            bindings = <&kp GRAVE &vscode_cmd_palette>;
-        };
     };
 
     keymap {
@@ -151,7 +147,7 @@
             bindings = <
 &kp F2    &kp F3             &kp F4     &kp F5          &kp F6                         &kp F7            &kp F8             &kp F9                &kp F10                &kp F11
 &kp EXCL  &kp JP_DQUOTE      &kp HASH      &kp DOLLAR         &kp PERCENT                    &kp JP_AMPERSAND  &kp JP_QUOTE     &kp JP_LPAREN  &kp JP_RPAREN  &kp JP_TILDE
-&kp F1    &kp SEMI           &kp JP_COLON  &kp JP_UNDERSCORE  &backquote_or_cmd             &kp JP_LBRACKET   &kp JP_RBRACKET  &kp JP_YEN     &kp JP_AT      &kp F12
+&kp F1    &kp SEMI           &kp JP_COLON  &kp JP_UNDERSCORE  &lt 10 GRAVE                   &kp JP_LBRACKET   &kp JP_RBRACKET  &kp JP_YEN     &kp JP_AT      &kp F12
 &trans    &trans             &trans        &trans             &trans       &trans    &trans  &trans            &trans           &trans         &trans         &trans
             >;
 
@@ -251,6 +247,18 @@
 &to 1         &to 4         &to 0         &none         &none                                           &none         &none         &to 0         &to 4         &to 1
 &trans        &trans        &sys_reset    &trans        &bootloader                                     &bootloader   &trans        &sys_reset    &trans        &trans
 &trans        &trans        &bt BT_CLR    &none         &none         &bt BT_CLR_ALL    &bt BT_CLR_ALL  &none         &none         &bt BT_CLR    &trans        &trans
+            >;
+        };
+
+        // L10: コマンドパレット用レイヤー（バッククォートキーをホールド時にアクティブ）
+
+        layer_10 {
+            display-name = "Cmd Palette";
+            bindings = <
+&trans        &trans        &trans        &trans        &trans                                        &trans        &trans        &trans        &trans        &trans
+&trans        &trans        &trans        &trans        &trans                                        &trans        &trans        &trans        &trans        &trans
+&trans        &trans        &trans        &trans        &vscode_cmd_palette                           &trans        &trans        &trans        &trans        &trans
+&trans        &trans        &trans        &trans        &trans       &trans    &trans  &trans     &trans     &trans        &trans        &trans
             >;
         };
     };
