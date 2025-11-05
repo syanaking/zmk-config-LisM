@@ -111,7 +111,7 @@ layers:
   - SEMI
   - ''''
   - Sft+0x87
-  - Sft+0x89
+  - BSLH
   - ']'
   - BSLH
   - '0x89'
@@ -160,7 +160,7 @@ layers:
   - Ctl+V
   - M4
   - M5
-  - '-'
+  - UNDERSCORE
   - .
   - ','
   - {t: ▽, type: trans}
@@ -375,7 +375,7 @@ layers:
   - Ctl+V
   - M4
   - M5
-  - '-'
+  - '='
   - .
   - ','
   - {t: ▽, type: trans}
