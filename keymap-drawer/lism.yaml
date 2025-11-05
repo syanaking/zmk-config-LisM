@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: lism}
 layers:
-  Default Layer:
+  US Base Layer:
   - Q
   - W
   - E
@@ -20,7 +20,7 @@ layers:
   - {t: J, h: RGUI}
   - {t: K, h: RSHIFT}
   - {t: L, h: RALT}
-  - {t: '-', h: Win Mouse/Nav Layer}
+  - {t: '-', h: US Mouse/Nav Layer}
   - Z
   - X
   - C
@@ -30,63 +30,63 @@ layers:
   - M
   - ','
   - .
-  - {t: /, h: Win Fn/Num Layer}
+  - {t: /, h: US Fn/Num Layer}
   - LCTRL
   - Global Settings
-  - {t: LANG5, h: Global Settings}
+  - {t: '`', h: Global Settings}
   - Sft+Gui+4
-  - {t: SPACE, h: Win Mouse/Nav Layer}
-  - {t: TAB, h: Win Fn/Num Layer}
+  - {t: SPACE, h: US Mouse/Nav Layer}
+  - {t: TAB, h: US Fn/Num Layer}
   - RIGHT SHIFT
-  - {t: BS, h: Win Fn/Num Layer}
+  - {t: BS, h: US Fn/Num Layer}
   - Sft+Gui+4
   - {t: Ctl+SPACE, h: Global Settings}
   - Global Settings
   - ENTER
-  Win Base Layer:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '-', h: Win Mouse/Nav Layer}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: /, h: Win Fn/Num Layer}
-  - {t: ▽, type: trans}
-  - ESC
-  - {t: Ctl+SPACE, h: Default Layer}
-  - {t: ▽, type: trans}
-  - {t: SPACE, h: Win Mouse/Nav Layer}
-  - {t: TAB, h: Win Fn/Num Layer}
+  JIS Base Layer:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - {t: S, h: LALT}
+  - {t: D, h: LSHIFT}
+  - {t: F, h: LGUI}
+  - {t: G, h: LCTRL}
+  - {t: H, h: RCTRL}
+  - {t: J, h: RGUI}
+  - {t: K, h: RSHIFT}
+  - {t: L, h: RALT}
+  - {t: '-', h: JIS Mouse/Nav Layer}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - {t: /, h: JIS Fn/Num Layer}
+  - LCTRL
+  - Global Settings
+  - {t: '`', h: Global Settings}
+  - Sft+Gui+4
+  - {t: SPACE, h: JIS Mouse/Nav Layer}
+  - {t: TAB, h: JIS Fn/Num Layer}
   - RIGHT SHIFT
-  - {t: BS, h: Win Fn/Num Layer}
-  - {t: ▽, type: trans}
-  - {t: Ctl+SPACE, h: Default Layer}
-  - {t: 半/全, h: Global Settings}
-  - {t: ▽, type: trans}
-  Win Fn/Num Layer:
+  - {t: BS, h: JIS Fn/Num Layer}
+  - Sft+Gui+4
+  - {t: Ctl+SPACE, h: Global Settings}
+  - Global Settings
+  - ENTER
+  JIS Fn/Num Layer:
   - F2
   - F3
   - F4
@@ -98,24 +98,24 @@ layers:
   - F10
   - F11
   - '!'
-  - '"'
+  - AT
   - '#'
   - $
   - '%'
+  - ^
   - '&'
-  - ''''
+  - '*'
   - (
-  - )
-  - '~'
+  - +
   - F1
   - SEMI
-  - ':'
-  - UNDERSCORE
-  - '|'
-  - '['
+  - ''''
+  - Sft+0x87
+  - Sft+0x89
   - ']'
   - BSLH
-  - '@'
+  - '0x89'
+  - '['
   - {t: F12, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -129,7 +129,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Win Mouse/Nav Layer:
+  JIS Mouse/Nav Layer:
   - DEL
   - '7'
   - '8'
@@ -301,6 +301,92 @@ layers:
   - {t: ▽, type: trans}
   - M5
   - {t: ▽, type: trans}
+  US Fn/Num Layer:
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - '!'
+  - '"'
+  - '#'
+  - $
+  - '%'
+  - '&'
+  - ''''
+  - (
+  - )
+  - '~'
+  - F1
+  - SEMI
+  - ':'
+  - UNDERSCORE
+  - '|'
+  - '['
+  - ']'
+  - BSLH
+  - '@'
+  - {t: F12, type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  US Mouse/Nav Layer:
+  - DEL
+  - '7'
+  - '8'
+  - '9'
+  - KP PLUS
+  - PG UP
+  - M1
+  - ↑
+  - M2
+  - M3
+  - '00'
+  - '4'
+  - '5'
+  - '6'
+  - KP MINUS
+  - PG DN
+  - ←
+  - ↓
+  - →
+  - {t: PRINTSCREEN, type: held}
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - KP MULTIPLY
+  - ','
+  - Ctl+C
+  - Ctl+V
+  - M4
+  - M5
+  - '-'
+  - .
+  - ','
+  - {t: ▽, type: trans}
+  - KP DIVIDE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Scroll↑
+  - Scroll↓
+  - {t: ▽, type: trans}
   Global Settings:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -312,26 +398,26 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - {t: Win Base Layer, h: toggle}
+  - {t: JIS Base Layer, h: toggle}
   - {t: iPad Base Layer, h: toggle}
-  - {t: Default Layer, h: toggle}
+  - {t: US Base Layer, h: toggle}
   - ''
   - ''
   - ''
   - ''
-  - {t: Default Layer, h: toggle}
+  - {t: US Base Layer, h: toggle}
   - {t: iPad Base Layer, h: toggle}
-  - {t: Win Base Layer, h: toggle}
+  - {t: JIS Base Layer, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Reset
-  - Boot
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Boot
+  - Boot
+  - {t: ▽, type: trans}
   - Reset
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - BT CLR
