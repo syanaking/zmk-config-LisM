@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 200
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
@@ -112,37 +112,23 @@
     keymap {
         compatible = "zmk,keymap";
 
-        // L0: Windows US配列 ベースレイヤー
+        // L0: Windows JIS配列 ベースレイヤー（デフォルト）
 
         default_layer {
-            display-name = "Windows US Base";
-            bindings = <
-&kp Q      &kp W       &kp E         &kp R           &kp T                                      &kp Y            &kp U           &kp I            &kp O       &kp P
-&kp A      &mt LALT S  &mt LSHIFT D  &mt LGUI F      &mt LCTRL G                                &mt RCTRL H      &mt RGUI J      &mt RSHIFT K     &mt RALT L  &lt 8 MINUS
-&kp Z      &kp X       &kp C         &kp V           &kp B                                      &kp N            &kp M           &kp COMMA        &kp DOT     &lt 7 SLASH
-&kp LCTRL  &lt 9 ESC   &lt 9 GRAVE   &kp LS(LG(N4))  &lt 8 SPACE  &lt 7 TAB    &kp RIGHT_SHIFT  &lt 7 BACKSPACE  &kp LS(LG(N4))  &lt 9 LC(SPACE)  &lt 9 ESC   &kp ENTER
-            >;
-
-            sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
-        };
-
-        // L1: Windows JIS配列 ベースレイヤー
-
-        layer_1 {
             display-name = "Windows JIS Base";
             bindings = <
 &kp Q      &kp W       &kp E         &kp R           &kp T                                         &kp Y            &kp U           &kp I            &kp O       &kp P
-&kp A      &mt LALT S  &mt LSHIFT D  &mt LGUI F      &mt LCTRL G                                   &mt RCTRL H      &mt RGUI J      &mt RSHIFT K     &mt RALT L  &lt 3 MINUS
-&kp Z      &kp X       &kp C         &kp V           &kp B                                         &kp N            &kp M           &kp COMMA        &kp DOT     &lt 2 SLASH
-&kp LCTRL  &lt 9 ESC   &lt 9 JP_HANZEN  &kp LS(LG(N4))  &lt 3 SPACE  &lt 2 TAB    &kp RIGHT_SHIFT  &lt 2 BACKSPACE  &kp LS(LG(N4))  &lt 9 JP_HANZEN  &lt 9 ESC   &kp ENTER
+&kp A      &mt LALT S  &mt LSHIFT D  &mt LGUI F      &mt LCTRL G                                   &mt RCTRL H      &mt RGUI J      &mt RSHIFT K     &mt RALT L  &lt 2 MINUS
+&kp Z      &kp X       &kp C         &kp V           &kp B                                         &kp N            &kp M           &kp COMMA        &kp DOT     &lt 1 SLASH
+&kp LCTRL  &lt 9 ESC   &lt 9 JP_HANZEN  &kp LS(LG(N4))  &lt 2 SPACE  &lt 1 TAB    &kp RIGHT_SHIFT  &lt 1 BACKSPACE  &kp LS(LG(N4))  &lt 9 JP_HANZEN  &lt 9 ESC   &kp ENTER
             >;
 
             sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
         };
 
-        // L2: Windows JIS配列 Fn / 数字 / 記号レイヤー
+        // L1: Windows JIS配列 Fn / 数字 / 記号レイヤー
 
-        layer_2 {
+        layer_1 {
             display-name = "Windows JIS Fn/Num";
             bindings = <
 &kp F2    &kp F3             &kp F4     &kp F5          &kp F6                         &kp F7            &kp F8             &kp F9                &kp F10                &kp F11
@@ -154,9 +140,9 @@
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
         };
 
-        // L3: Windows JIS配列 マウス / ナビゲーションレイヤー
+        // L2: Windows JIS配列 マウス / ナビゲーションレイヤー
 
-        layer_3 {
+        layer_2 {
             display-name = "Windows JIS Mouse/Nav";
             bindings = <
 &kp DEL       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS                        &kp PG_UP  &mkp MB1   &kp UP          &mkp MB2         &mkp MB3
@@ -168,23 +154,23 @@
             sensor-bindings = <&encoder_kp RIGHT_ARROW LEFT_ARROW>;
         };
 
-        // L4: iPad ベースレイヤー
+        // L3: iPad ベースレイヤー
 
-        layer_4 {
+        layer_3 {
             display-name = "iPad Base";
             bindings = <
 &kp Q      &kp W       &kp E         &kp R           &kp T                                      &kp Y            &kp U           &kp I            &kp O       &kp P
-&kp A      &mt LALT S  &mt LSHIFT D  &mt LGUI F      &mt LCTRL G                                &mt RCTRL H      &mt RGUI J      &mt RSHIFT K     &mt RALT L  &lt 6 MINUS
-&kp Z      &kp X       &kp C         &kp V           &kp B                                      &kp N            &kp M           &kp COMMA        &kp DOT     &lt 5 SLASH
-&kp LCTRL  &lt 9 ESC   &kp LC(SPACE) &kp LS(LG(N4))  &lt 6 SPACE  &lt 5 TAB    &kp RIGHT_SHIFT  &lt 5 BACKSPACE  &kp LS(LG(N4))  &kp LC(SPACE)  &lt 9 ESC   &kp ENTER
+&kp A      &mt LALT S  &mt LSHIFT D  &mt LGUI F      &mt LCTRL G                                &mt RCTRL H      &mt RGUI J      &mt RSHIFT K     &mt RALT L  &lt 5 MINUS
+&kp Z      &kp X       &kp C         &kp V           &kp B                                      &kp N            &kp M           &kp COMMA        &kp DOT     &lt 4 SLASH
+&kp LCTRL  &lt 9 ESC   &kp LC(SPACE) &kp LS(LG(N4))  &lt 5 SPACE  &lt 4 TAB    &kp RIGHT_SHIFT  &lt 4 BACKSPACE  &kp LS(LG(N4))  &kp LC(SPACE)  &lt 9 ESC   &kp ENTER
             >;
 
             sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
         };
 
-        // L5: iPad Fn / 数字 / 記号レイヤー
+        // L4: iPad Fn / 数字 / 記号レイヤー
 
-        layer_5 {
+        layer_4 {
             display-name = "iPad Fn/Num";
             bindings = <
 &kp F2    &kp F3             &kp F4     &kp F5          &kp F6                         &kp F7            &kp F8             &kp F9                &kp F10                &kp F11
@@ -196,9 +182,9 @@
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
         };
 
-        // L6: iPad マウス / ナビゲーションレイヤー
+        // L5: iPad マウス / ナビゲーションレイヤー
 
-        layer_6 {
+        layer_5 {
             display-name = "iPad Mouse/Nav";
             bindings = <
 &kp DEL       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS                        &kp PG_UP  &mkp MB1   &kp UP          &mkp MB2         &mkp MB3
@@ -208,6 +194,20 @@
             >;
 
             sensor-bindings = <&encoder_kp RIGHT_ARROW LEFT_ARROW>;
+        };
+
+        // L6: Windows US配列 ベースレイヤー
+
+        layer_6 {
+            display-name = "Windows US Base";
+            bindings = <
+&kp Q      &kp W       &kp E         &kp R           &kp T                                      &kp Y            &kp U           &kp I            &kp O       &kp P
+&kp A      &mt LALT S  &mt LSHIFT D  &mt LGUI F      &mt LCTRL G                                &mt RCTRL H      &mt RGUI J      &mt RSHIFT K     &mt RALT L  &lt 8 MINUS
+&kp Z      &kp X       &kp C         &kp V           &kp B                                      &kp N            &kp M           &kp COMMA        &kp DOT     &lt 7 SLASH
+&kp LCTRL  &lt 9 ESC   &lt 9 GRAVE   &kp LS(LG(N4))  &lt 8 SPACE  &lt 7 TAB    &kp RIGHT_SHIFT  &lt 7 BACKSPACE  &kp LS(LG(N4))  &lt 9 LC(SPACE)  &lt 9 ESC   &kp ENTER
+            >;
+
+            sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
         };
 
         // L7: Windows US配列 Fn / 数字 / 記号レイヤー
@@ -244,7 +244,7 @@
             display-name = "Global Settings";
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&to 1         &to 4         &to 0         &none         &none                                           &none         &none         &to 0         &to 4         &to 1
+&to 0         &to 3         &to 6         &none         &none                                           &none         &none         &to 6         &to 3         &to 0
 &trans        &trans        &sys_reset    &trans        &bootloader                                     &bootloader   &trans        &sys_reset    &trans        &trans
 &trans        &trans        &bt BT_CLR    &none         &none         &bt BT_CLR_ALL    &bt BT_CLR_ALL  &none         &none         &bt BT_CLR    &trans        &trans
             >;
