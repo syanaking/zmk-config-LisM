@@ -263,3 +263,10 @@
         };
     };
 }; // keymap ノード終了
+
+// レイヤー変更に合わせてスクロール層を修正（JIS Fn/Num = L1）
+&right_listener {
+    scroller {
+        layers = <1>;
+    };
+};
